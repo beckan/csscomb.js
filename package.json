@@ -43,7 +43,7 @@
     "csscomb": "./bin/csscomb"
   },
   "scripts": {
-    "build": "./scripts/build.sh",
+    "build": "babel --plugins babel-plugin-transform-es2015-destructuring --loose all src --out-dir lib",
     "coverage": "./scripts/coverage.sh",
     "prepublish": "./scripts/build.sh",
     "test": "./scripts/build.sh && ./scripts/test.sh",
